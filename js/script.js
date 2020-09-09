@@ -1,6 +1,7 @@
 const resetBtn = document.querySelector('#reset')
 const tdArr = document.querySelectorAll('td')
 const descr = document.querySelector('.descr')
+const table = document.querySelector('.table')
 let counter = 0
 const t = new Array(9)
 
@@ -69,8 +70,10 @@ tdArr.forEach(item => item.addEventListener('click', () => {
     makeGuess(item)
     if (checkWin() === 'cross') {
         descr.innerHTML = 'ПОБЕДИЛИ КРЕСТИКИ!'
+        table.classList.add('table_none')
     } else if (checkWin() === 'round') {
         descr.innerHTML = 'ПОБЕДИЛИ НОЛИКИ!'
+        table.classList.add('table_none')
     }  
 }))
 
