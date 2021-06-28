@@ -1,3 +1,4 @@
 Tic tac toe
+--
 
-http://f0457791.xsph.ru/cross/
+https://dynamic1717-tictactoe.netlify.app/
